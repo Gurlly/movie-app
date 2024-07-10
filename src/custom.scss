@@ -1,0 +1,44 @@
+// Define custom variables before importing Bootstrap
+$primary: #3498db;
+$secondary: #2ecc71;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
+
+// Dark mode colors
+$body-bg-dark: #181818;
+$body-color-dark: #ffffff;
+$primary-dark: #1e90ff;
+$secondary-dark: #2ecc71;
+$success-dark: #28a745;
+$info-dark: #17a2b8;
+$warning-dark: #ffc107;
+$danger-dark: #dc3545;
+$light-dark: #343a40;
+$dark-dark: #f8f9fa;
+
+// Import Bootstrap after defining custom variables
+@import "~bootstrap/scss/bootstrap";
+
+// Custom styles
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.dark-mode {
+  background-color: $body-bg-dark;
+  color: $body-color-dark;
+
+  // Override Bootstrap variables for dark mode
+  $primary: $primary-dark;
+  $secondary: $secondary-dark;
+  $success: $success-dark;
+  $info: $info-dark;
+  $warning: $warning-dark;
+  $danger: $danger-dark;
+  $light: $light-dark;
+  $dark: $dark-dark;
+}

@@ -1,0 +1,65 @@
+.navbar-toggler {
+    padding: 0.25rem 0.5rem !important; /* Adjust padding to make the button smaller */
+    border: none !important !important; /* Remove the border */
+}
+  
+.navbar-toggler:focus {
+    outline: none !important; /* Remove the focus outline */
+    box-shadow: none !important; /* Remove any box shadow */
+}
+  
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+#navTitle {
+    color: #f8f9fa !important;
+    text-shadow: 2px 4px 5px #343a40 !important;
+}
+
+.movie-holder {
+    width: 100%;
+    max-width: 18rem;
+    height: max-content;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.movie-image {
+    width: 100% !important;
+    height: 22rem !important;
+    object-fit: fill;
+    object-position: center;
+}
+
+.movie-description {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    color: #f8f9fa !important;
+    padding: 0.75rem !important;
+    position: absolute !important;
+    top: 0 !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: start !important; 
+    justify-content: space-between !important; 
+    opacity: 0 !important; 
+    transition: opacity 0.3s ease !important;
+}
+
+.movie-holder:hover .movie-description {
+    opacity: 1 !important; 
+}
+
+@media screen and (min-width: 768px) {
+    #search-input {
+        width: 19rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .movie-holder {
+        max-width: 19rem;
+    }
+}
