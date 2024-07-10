@@ -9,7 +9,7 @@ import './custom.css';
 
 // Movie API Key: fe21826f
 
-const apiURL = 'http://www.omdbapi.com?apikey=fe21826f';
+const apiURL = 'https://www.omdbapi.com?apikey=fe21826f';
 
 
 function App() {
